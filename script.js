@@ -1,2 +1,3 @@
-const titolo = document.getElementById("titolo");
-console.log(titolo.innerHTML);
+const testoTitolo = document.getElementById("titolo").innerText;
+const nomeValue = document.getElementById("nome").value;
+console.log("titolo:", testoTitolo);
