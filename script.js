@@ -1,3 +1,6 @@
-const testoTitolo = document.getElementById("titolo").innerText;
-const nomeValue = document.getElementById("nome").value;
-console.log("titolo:", testoTitolo);
+const titolo = document.getElementById("titolo");
+const buttonInvia = document.getElementById("invia").addEventListener("click", onInviaNome);
+function onInviaNome() {
+    const nomeValue = document.getElementById("nome").value;
+    titolo.innerText = `Ciao ${nomeValue}!`;
+}
